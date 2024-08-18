@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: default;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -- Background -- */
+.background-top{
+    position: absolute;
+    top:35%;
+    width: 100%;
+    height: 100%;
+    height: 70rem;
+    background-color: none;
+    padding: 0;
+    margin: 0;
+    rotate: 180deg;
+    z-index: -1;
+}
+
+
+/* -- Navigation Bar -- */
+
+
+/* -- Top -- */
+.nav-top{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F9B840;
+    padding: .5rem;
+    align-items: center;
+}
+
+.nav-top-social-media{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+}
+
+.nav-top-contact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+/* -- Bottom -- */
+.navbar{
+    background-color:rgb(73, 73, 252);
+    width: 100%;
+    padding: 1rem 0;
+}
+
+ul{
+    display: flex;
+    padding: 0 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-links li{
+    color: white;
+}
+
+.nav-logo{
+    display: flex;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-logo-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-logo-container p{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+/* -- All Section -- */
+
+.all-section{
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+/* -- Seciton 1 -- */
+.section1{
+    background-color: #F9B840;
+    color: white;
+}
+
+.section1 h1{
+    font-size: 4rem;
+}
+
+.section1-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    padding: 5rem 10rem;
+    padding-bottom: 0rem;
+    align-items: center;
+}
+
+.section1-heading a{
+    border: solid 1px white;
+    padding: 1rem;
+    color: white;
+    border-radius: .5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.section1-heading a:hover{
+    background-color: white;
+    color: #F9B840;
+}
+
+/* -- Seciton 1 Heading -- */
+
+.section1-heading{
+    width: 65rem;
+}
+
+.section1-heading p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 2rem 0;
+    width: 65rem;
+}
+
+/* -- Seciton 1 Image -- */
+.image-frame{
+    display: flex;
+    overflow: clip;
+    height: 600px;
+    width: 900px;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 2px 2px #7a6132;
+}
+
+.image-frame img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* -- Seciton 2 -- */
+.section2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem;
+}
+
+.section2-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.section2-news-container{
+    position: relative;
+    display: flex;
+    height: 35rem;
+    width: 25rem;
+    overflow: clip;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.section2-news-container:hover img{
+    scale: 1.1;
+    filter: brightness(.7);
+}
+
+.section2-news-container img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    filter: brightness(.5);
+    transition: .3s ease-in-out;
+}
+
+.section2-news-text{
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 350px;
+}
+
+.section2-news-text h3{
+    font-size: 1.5rem;
+}
+
+.news-info-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.news-info{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.news-info a:hover{
+    color: #F9B840;
+}
+
+.news-info a{
+    transition: all 0.3s ease-in-out;
+}
+
+.news-btn{
+    background-color: #F9B840;
+    padding: 1rem;
+    color: white;
+    margin-top: 3rem;
+    border-radius: .5rem;
+}
+
+.section2 h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* -- Seciton 3 -- */
+.section3{
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.section3-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.section3-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.section3-card-icon i {
+    font-size: 4rem;
+}
+
+.section3-card-label h3{
+    margin-bottom: .5rem;
+}
+
+.section3-card-label p{
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* -- Seciton 4 -- */
+
+.section4-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 20rem;
+}
+
+.section4-wrapper h2{
+    font-size: 2rem;
+}
+
+.section4-wrapper h2{
+    margin-bottom: 2rem;
+}
+
+.section4-wrapper p{
+    line-height: 1.6;
+}
+
+.section4-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section4-card-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-shadow: .5px .5px .5px .5px black;
+}
+
+.section4-card-image{
+    display: flex;
+    overflow: clip;
+    width: 80rem;
+}
+
+.section4-card-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section4-card-content{
+    padding: 2rem 2rem;
+}
+
+.section4-card-content h3{
+    margin-bottom: 1rem;
+}
+
+.section4-card-content p{
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.section4-card-content a{
+    background-color: #F9B840;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: white;
+}
+
+
+/* -- Footer -- */
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #F9B840;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width:1920px){
+    .section1-heading{
+        width: 60rem;
+    }
+
+    .background-top{
+        top: 36%;
+    }
+
+    .image-frame{
+        height: 500px;
+    }
+
+    .section1-heading p{
+        width: 100%;
+    }
+
+    .section4-card-container{
+        width: auto;
+    }
+
+
+    .section4-card-image{
+        width: 100rem;
+        height: auto;
+    }
+
+    .section4-card-content{
+        padding: 2rem;
+    }
+}
